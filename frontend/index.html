@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Object Recognition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="ai-image.png" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>AI Object Recognition</h1>
+    <p class="subtitle">Upload an image and enter a target object</p>
+
+    <div class="upload-box">
+      <input type="file" id="fileInput" accept="image/*" />
+      <input type="text" id="targetObject" placeholder="Enter target object" />
+      <button id="uploadBtn">Predict</button>
+    </div>
+
+    <div id="loading" class="loading">Processing...</div>
+
+    <div id="imagePreview" class="image-preview"></div>
+
+    <p id="resultText"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

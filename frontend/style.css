@@ -1,0 +1,104 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #c9e9ff, #f9f9f9);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  width: 380px;
+}
+
+h1 {
+  margin-top: 0;
+  color: #0077cc;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#fileInput, #targetObject {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  width: 85%;
+  transition: border-color 0.3s;
+}
+
+#fileInput:focus, #targetObject:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+#uploadBtn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 90%;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 119, 204, 0.3);
+}
+
+#uploadBtn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 119, 204, 0.35);
+}
+
+.loading {
+  display: none;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0077cc;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.image-preview {
+  display: none;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-preview img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+#resultText {
+  font-weight: bold;
+  margin-top: 18px;
+  font-size: 1.15rem;
+  color: #333;
+}
